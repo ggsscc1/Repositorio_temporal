@@ -5,7 +5,15 @@ public class Cadenas extends Actor
     GreenfootImage imagen;
     int cont;
     String mensaje;
-    
+
+     /**
+     * This method draws the 
+     * 
+     * @param cont 
+     * @param mensaje mensaje que recibe 
+     * 
+     * @return 
+     */
     public Cadenas(int cont, String mensaje)
     {
         this.cont=cont;
@@ -16,6 +24,7 @@ public class Cadenas extends Actor
         dibuja();
     }
     
+
     public void dibuja()
     {
         imagen.clear();

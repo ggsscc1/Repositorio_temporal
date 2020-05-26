@@ -2,6 +2,7 @@
 comment0.target=Cadenas
 comment1.params=cont\ mensaje
 comment1.target=Cadenas(int,\ java.lang.String)
+comment1.text=\r\n\ This\ method\ draws\ the\ \r\n\ \r\n\ @param\ cont\ \r\n\ @param\ mensaje\ mensaje\ que\ recibe\ \r\n\ \r\n\ @return\ \r\n
 comment2.params=
 comment2.target=void\ dibuja()
 comment3.params=
