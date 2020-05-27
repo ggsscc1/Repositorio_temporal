@@ -103,6 +103,10 @@ public class Personaje extends Actor
         }
     }
     
+    
+    /*
+     * Funcion para disparar
+     */
     public void setShot(int direction)
     {
         if(Greenfoot.isKeyDown("s")&& isShot)

@@ -8,7 +8,7 @@ import java.util.*;
  */
 public class level1 extends World
 {
-    public Lifes life;
+    public Life life;
 
     int x=5;
     Cadenas puntos;
@@ -31,7 +31,7 @@ public class level1 extends World
         //create other personajes
         crearMono(x);
         //
-        life = new Lifes();
+        life = new Life();
         //
         puntos= new Cadenas(0,"Score: ");
         //

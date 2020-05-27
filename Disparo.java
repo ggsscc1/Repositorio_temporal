@@ -11,7 +11,9 @@ public class Disparo extends Actor
     int speed=5;
     int direction;
     
-    
+    /*
+     * Funcion Constructor De Disparo
+     */
     public Disparo(int direction)
     {
         this.direction=direction;
@@ -45,7 +47,11 @@ public class Disparo extends Actor
                  case 2: level2 w1 = (level2)getWorld(); break;
                  case 3: MyWorld w2 = (MyWorld)getWorld(); break;
                 }*/
-            getWorld().removeObject(Mono);            
+            getWorld().removeObject(Mono);
+            w.puntos.incrementar();
+            //Life r = new Life();
+            //r.winScore();
+         
         }
         
 

@@ -3,7 +3,7 @@ import java.util.*;
 
 public class MyWorld extends World
 {
-    public Lifes life;
+    public Life life;
 
     int x=5;
     Cadenas puntos;
@@ -26,7 +26,7 @@ public class MyWorld extends World
         //create other personajes
         crearMono(x);
         //
-        life = new Lifes();
+        life = new Life();
         //
         puntos= new Cadenas(0,"puntuacion ");
         //

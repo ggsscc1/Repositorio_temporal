@@ -6,17 +6,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Lifes extends Actor
+public class Life extends Actor
 {
-    int lifes=3;
-    
+    private int lifes = 3;
+    private int score = 0;
        
     public void act() 
     {
         // Add your action code here.
     }    
     
-    public Lifes()
+    public Life()
     {
         
     }
@@ -28,6 +28,11 @@ public class Lifes extends Actor
         {
             Greenfoot.stop();
         }
+    }
+    
+    public void winScore()
+    {
+        score ++ ;
     }
     
 }

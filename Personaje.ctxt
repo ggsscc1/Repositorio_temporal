@@ -11,4 +11,5 @@ comment3.target=void\ setDirection(int)
 comment3.text=\r\n\ Funcion\ para\ mover\ al\ personaje\r\n
 comment4.params=direction
 comment4.target=void\ setShot(int)
+comment4.text=\r\n\ Funcion\ para\ disparar\r\n
 numComments=5
