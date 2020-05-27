@@ -40,7 +40,8 @@ public class Disparo extends Actor
         Actor Mono = getOneObjectAtOffset(0,0,Mono.class);
         if(Mono!=null)
         {
-            Level1 w = (Level1)getWorld();
+            Nivel w = (Nivel)getWorld();
+            //Level1 w = (Level1)getWorld();
             /*
             switch(Menu.lvl){
                  case 1: level1 w = (level1)getWorld(); break;

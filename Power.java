@@ -50,9 +50,11 @@ public class Power extends Actor
         }
         move(4);
         
-        //Actor Mono=getOneObjectAtOffset(0,0,Mono.class);
+        //Actor Mono = getOneObjectAtOffset(0,0,Mono.class);
         if(Mono!=null)
-        {
+        {   
+           // Nivel w = (Nivel)getWorld();
+            /*
             switch (Menu.lvl)
             {
                 case 1: Level1 w = (Level1)getWorld(); 
@@ -72,7 +74,7 @@ public class Power extends Actor
                 
             }
             
-           
+           */
             getWorld().removeObject(this);
         }
         else
