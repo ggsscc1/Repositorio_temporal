@@ -55,17 +55,17 @@ public class Power extends Actor
         {
             switch (Menu.lvl)
             {
-                case 1: level1 w = (level1)getWorld(); 
+                case 1: Level1 w = (Level1)getWorld(); 
                         // getWorld().removeObject(Mono);
                         w.puntos.incrementar();
                         w.crearMono(1);    
                         break;
-                case 2: level2 w1 = (level2)getWorld(); 
+                case 2: Level2 w1 = (Level2)getWorld(); 
                         w1.puntos.incrementar();
                         w1.crearMono(1); 
                 
                         break;
-                case 3: MyWorld w2 = (MyWorld)getWorld(); 
+                case 3: Level3 w2 = (Level3)getWorld(); 
                         w2.puntos.incrementar();
                         w2.crearMono(1); 
                         break;

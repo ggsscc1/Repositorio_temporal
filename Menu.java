@@ -58,7 +58,7 @@ public class Menu extends World
         
         if(Greenfoot.isKeyDown("SPACE") || Greenfoot.isKeyDown("ENTER")){
             if(band == 0){
-                Greenfoot.setWorld(new level1());
+                Greenfoot.setWorld(new Level1());
                 musica.stop();
                 Menu.lvl ++;
             }

@@ -28,7 +28,7 @@ public class Mono extends Actor
         Actor Personaje = getOneObjectAtOffset(0,0,Personaje.class);
         if(Personaje!=null)
         {
-            level1 w = (level1)getWorld();
+            Level1 w = (Level1)getWorld();
             //MyWorld w=(MyWorld)getWorld();
             getWorld().removeObject(Personaje);
             w.vidas.decrementar();

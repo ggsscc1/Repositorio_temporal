@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Nivel
+comment0.text=\r\n\ Clase\ padre\ de\ nivel\ 1,\ 2\ y\ 3\r\n
+comment1.params=
+comment1.target=Nivel()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Nivel.\r\n\ \r\n
+comment2.params=cant
+comment2.target=void\ crearMono(int)
+comment3.params=numero
+comment3.target=void\ crearPower(int)
+numComments=4
