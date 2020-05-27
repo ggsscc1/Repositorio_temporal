@@ -29,6 +29,7 @@ public class Personaje extends Actor
         }
         if(Greenfoot.isKeyDown("left"))
         {
+            
             setDirection(left);
             shot=3;
         }
@@ -45,7 +46,7 @@ public class Personaje extends Actor
         switch(direction)
         {
             case up:
-                setRotation(270);
+                
                 if(Greenfoot.isKeyDown("space"))
                 {
                     setLocation(getX(),getY()-10);
@@ -57,7 +58,7 @@ public class Personaje extends Actor
             break;
             
             case down:
-                setRotation(90);
+                
                 if(Greenfoot.isKeyDown("space"))
                 {
                     setLocation(getX(),getY()+10);
@@ -69,7 +70,7 @@ public class Personaje extends Actor
             break;
             
             case left:
-                setRotation(180);
+                setImage("diablito2.png");
                 if(Greenfoot.isKeyDown("space"))
                 {
                     setLocation(getX()-10,getY());
@@ -81,7 +82,7 @@ public class Personaje extends Actor
             break;
             
             case right:
-                setRotation(0);
+                setImage("diablito.png");
                 if(Greenfoot.isKeyDown("space"))
                 {
                     setLocation(getX()+10,getY());
