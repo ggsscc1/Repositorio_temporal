@@ -10,13 +10,20 @@ public class Personaje extends Actor
     int shot=2;
     boolean isShot=false;
     boolean isPower=false;
-    
+    /*
+     * Funcion constructor
+     */
     public Personaje()
     {
+        setImage("diablito.png");
     }
     
+    /*
+     * Funcion para control de personaje con teclas
+     */
     public void act() 
     {
+        
         if(Greenfoot.isKeyDown("up"))
         {
             setDirection(up);
@@ -40,7 +47,10 @@ public class Personaje extends Actor
         
         setShot(shot);
     }    
-    
+     
+    /*
+     * Funcion para mover al personaje
+     */
     public void setDirection(int direction)
     {
         switch(direction)

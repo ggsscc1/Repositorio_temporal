@@ -23,7 +23,7 @@ public class level1 extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
         //orden para que se vallan añadiendo
-        setPaintOrder(GameOver.class,Cadenas.class,Mono.class, Personaje.class);
+        setPaintOrder(GameOver.class, Cadenas.class, Mono.class, Personaje.class);
         // create new object
         Personaje n1 = new Personaje();
         // add object in world
@@ -33,17 +33,18 @@ public class level1 extends World
         //
         life = new Lifes();
         //
-        puntos= new Cadenas(0,"puntuacion ");
+        puntos= new Cadenas(0,"Score: ");
         //
-        vidas= new Cadenas(3,"vidas ");
+        vidas= new Cadenas(3,"Life: ");
         //
-        power=new Cadenas(0,"Power ");
+        power=new Cadenas(0,"Power: ");
         //
+        
         addObject(puntos,150,85);
         //
-        addObject(vidas, 400, 85);
+        addObject(vidas, 260, 85);
         //
-        addObject(power,500,85);
+        addObject(power,345,85);
         //
         crearPower(1);
     }
