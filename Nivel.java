@@ -36,7 +36,7 @@ public class Nivel extends World
   
         addObject(puntos,150,85);
         addObject(vidas, 270, 85);
-        addObject(power,355,85);
+        //addObject(power,355,85);
         
         crearPower(1);
     }

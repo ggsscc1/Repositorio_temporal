@@ -4,6 +4,7 @@ import greenfoot.*;
 
 public class GameOver extends Actor
 {
+    
     public GameOver()
     {
         setImage("game_over.jpg");

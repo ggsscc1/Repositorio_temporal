@@ -9,15 +9,25 @@ public class Level2 extends Nivel
      */
     public Level2()
     {    
+        prepare();
     }
-    
+
     public void act(){
-        if(Greenfoot.isKeyDown("ñ")){
-           
-                Greenfoot.setWorld(new Level3());
-                Menu.lvl++;
-            
+        if(Nivel.score == 10){
+
+            Greenfoot.setWorld(new Level3());
+            Menu.lvl++;
+
         }
-    
+
+    }
+
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        
     }
 }
