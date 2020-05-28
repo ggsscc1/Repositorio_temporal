@@ -1,15 +1,10 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  
 import java.util.*;
-/**
- * Write a description of class disparo here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class Disparo extends Actor
 {
-    int speed=5;
-    int direction;
+    private int speed = 5;
+    private int direction;
     
     /*
      * Funcion Constructor De Disparo
@@ -50,6 +45,7 @@ public class Disparo extends Actor
                 }*/
             getWorld().removeObject(Mono);
             w.puntos.incrementar();
+            w.score++;
             //Life r = new Life();
             //r.winScore();
          
@@ -61,10 +57,10 @@ public class Disparo extends Actor
             getWorld().removeObject(this);
         }else
         {
-        if((getY() >= getWorld().getWidth()-3) || (getY()<=3))
-        {
-            getWorld().removeObject(this);
-        }
+            if((getY() >= getWorld().getWidth()-3) || (getY()<=3))
+            {
+                getWorld().removeObject(this);
+            }
         }
 
         

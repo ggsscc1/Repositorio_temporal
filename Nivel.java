@@ -6,9 +6,9 @@ import java.util.*;
 public class Nivel extends World
 {
     int x=5;
-    Cadenas puntos;
-    Cadenas vidas;
-    Cadenas power;
+    public Cadenas puntos;
+    public Cadenas vidas;
+    public Cadenas power;
     public static int score = 0; // Variable identificadora score
     public static int life = 3; // Variable identificadora life
     public static int powwer = 0; // Variable identificadora power
@@ -19,8 +19,7 @@ public class Nivel extends World
      */
     public Nivel()
     {    
-       
-         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+       // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
         //orden para que se vallan añadiendo
         setPaintOrder(GameOver.class, Cadenas.class, Mono.class, Personaje.class);
@@ -30,22 +29,15 @@ public class Nivel extends World
         addObject(n1,50,300);
         //create other personajes
         crearMono(x);
-        //
-        //life = new Life();
-        //
+      
         puntos= new Cadenas(score,"Score: ");
-        //
         vidas= new Cadenas(life,"Life: ");
-        //
         power=new Cadenas(powwer,"Power: ");
-        //
-        
+  
         addObject(puntos,150,85);
-        //
         addObject(vidas, 260, 85);
-        //
         addObject(power,345,85);
-        //
+        
         crearPower(1);
     }
     

@@ -5,11 +5,9 @@ import java.util.*;
 
 public class Power extends Actor
 {
-
-    int shot=1;
-    int shotSpeed=7;
-    int position;
-    int lvl = 0;
+    private int shot = 1;
+    private int shotSpeed = 7;
+    private int position;
     
     public Power(int direction)
     {
@@ -38,8 +36,10 @@ public class Power extends Actor
                     setRotation(180);
             break;
         }
+        
         List<Mono> Mono=getObjectsInRange(200,Mono.class);
         Iterator it=Mono.iterator();
+        
         if(it.hasNext())
         {
             Mono m=(Mono)it.next();

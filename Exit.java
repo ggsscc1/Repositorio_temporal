@@ -1,11 +1,6 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  
 
-/**
- * Write a description of class Exit here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class Exit extends Actor
 {
     /**
@@ -14,11 +9,5 @@ public class Exit extends Actor
      */
     public void act() 
     {
-    /*    // Add your action code here.
-    if(getY() > 300 && getY() < 600)
-    {
-        Greenfoot.stop();
-    }*/
-
-}
+    }
 }

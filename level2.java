@@ -1,11 +1,6 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  
 import java.util.*;
-/**
- * Write a description of class level2 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class Level2 extends Nivel
 {
     /**

@@ -2,21 +2,21 @@ import greenfoot.*;
 
 public class Cadenas extends Actor
 {
-    GreenfootImage imagen;
-    int cont;
-    String mensaje;
+    private GreenfootImage imagen;
+    private int valorVariable;
+    private String mensaje;
     
      /**
      * This method draws the 
      * 
-     * @param cont 
+     * @param valorVariable 
      * @param mensaje mensaje que recibe 
-     * 
+     * nombre de la cadena
      * @return 
      */
-    public Cadenas(int cont, String mensaje)
+    public Cadenas(int valorVariable, String mensaje)
     {
-        this.cont = cont;
+        this.valorVariable = valorVariable;
         this.mensaje = mensaje;
         imagen = new GreenfootImage(250,150);
         imagen.setColor(new Color(200,200,0,255));
@@ -24,30 +24,32 @@ public class Cadenas extends Actor
         dibuja();
     }
     
-
+    /*
+     * 
+     */
     public void dibuja()
     {
         imagen.clear();
-        imagen.drawString(mensaje+cont,20,20);
+        imagen.drawString(mensaje + valorVariable, 20, 20);
         setImage(imagen);
     }
     
     public void incrementar()
     {
-        cont ++;
+        valorVariable ++;
         dibuja();
     }
     
     public void decrementar()
     {
-        cont --;
+        valorVariable --;
         dibuja();
       
     }
     
     public int obtenerValor()
     {
-        return cont;
+        return valorVariable;
     }
     
     public void act()

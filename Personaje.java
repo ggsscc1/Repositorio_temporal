@@ -3,13 +3,13 @@ import java.util.*;
 
 public class Personaje extends Actor
 {
-    public static final int up=0;
-    public static final int down=1;
-    public static final int left=2;
-    public static final int right=3;
-    int shot=2;
-    boolean isShot=false;
-    boolean isPower=false;
+    public static final int up = 0;
+    public static final int down = 1;
+    public static final int left = 2;
+    public static final int right = 3;
+    private int shot = 2;
+    private boolean isShot=false;
+    private boolean isPower=false;
     /*
      * Funcion constructor
      */
