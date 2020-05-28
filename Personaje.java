@@ -26,23 +26,39 @@ public class Personaje extends Actor
         
         if(Greenfoot.isKeyDown("up"))
         {
-            setDirection(up);
-            shot=0;
+            if(getY() > 100){
+                setDirection(up);
+                shot=0;
+                
+            }
+            
         }
         if(Greenfoot.isKeyDown("down"))
         {
-            setDirection(down);
-            shot=1;
+            if(getY() < 530){
+                setDirection(down);
+                shot=1;
+                
+            }
+            
         }
         if(Greenfoot.isKeyDown("right"))
         {
-            setDirection(right);
-            shot=2;
+            if(getX() < 750){
+                setDirection(right);
+                shot=2;
+                
+            }
+            
         }
         if(Greenfoot.isKeyDown("left"))
         {
-            setDirection(left);
-            shot=3;
+            if(getX() > 50){
+                setDirection(left);
+                shot=3;
+                
+            }
+            
         }
         
         setShot(shot);

@@ -8,7 +8,8 @@ public class Mono extends Actor
     {
         move(2);
         World m=getWorld();
-        if(getX()>=m.getWidth()-10 || getX()<=10)
+        
+        if(getX() >= m.getWidth()-20 || getX()<=20)
         {
             turn(180);
             if(Greenfoot.getRandomNumber(100)<90)
@@ -16,7 +17,8 @@ public class Mono extends Actor
                 turn(Greenfoot.getRandomNumber(90-45));
             }
         }
-        if(getY()>=m.getWidth()-15 || getY()<=15)
+        
+        if(getY()>=m.getHeight()-20 || getY()<=50)
         {
             turn(180);
             if(Greenfoot.getRandomNumber(100)<90)
@@ -29,13 +31,12 @@ public class Mono extends Actor
         if(Personaje!=null)
         {
             Nivel w = (Nivel)getWorld();
-            //Level1 w = (Level1)getWorld();
-            //MyWorld w=(MyWorld)getWorld();*
             getWorld().removeObject(Personaje);
             w.vidas.decrementar();
             w.life --;
             getWorld().addObject(new Personaje(),50,300);
-            if(w.vidas.obtenerValor()== 0)
+            
+            if(w.vidas.obtenerValor() <= 0)
             {
                 GameOver t = new GameOver();
                 getWorld().addObject(t,((getWorld().getWidth()/2)),((getWorld().getHeight()/2)));

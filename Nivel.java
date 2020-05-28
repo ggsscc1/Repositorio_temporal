@@ -30,13 +30,13 @@ public class Nivel extends World
         //create other personajes
         crearMono(x);
       
-        puntos= new Cadenas(score,"Score: ");
-        vidas= new Cadenas(life,"Life: ");
-        power=new Cadenas(powwer,"Power: ");
+        puntos= new Cadenas(score,"Score:");
+        vidas= new Cadenas(life,"Life:");
+        power=new Cadenas(powwer,"Power:");
   
         addObject(puntos,150,85);
-        addObject(vidas, 260, 85);
-        addObject(power,345,85);
+        addObject(vidas, 270, 85);
+        addObject(power,355,85);
         
         crearPower(1);
     }
