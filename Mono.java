@@ -30,9 +30,10 @@ public class Mono extends Actor
         {
             Nivel w = (Nivel)getWorld();
             //Level1 w = (Level1)getWorld();
-            //MyWorld w=(MyWorld)getWorld();
+            //MyWorld w=(MyWorld)getWorld();*
             getWorld().removeObject(Personaje);
             w.vidas.decrementar();
+            w.life --;
             getWorld().addObject(new Personaje(),50,300);
             if(w.vidas.obtenerValor()== 0)
             {

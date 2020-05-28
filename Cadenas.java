@@ -5,7 +5,7 @@ public class Cadenas extends Actor
     GreenfootImage imagen;
     int cont;
     String mensaje;
-
+    
      /**
      * This method draws the 
      * 
@@ -16,8 +16,8 @@ public class Cadenas extends Actor
      */
     public Cadenas(int cont, String mensaje)
     {
-        this.cont=cont;
-        this.mensaje=mensaje;
+        this.cont = cont;
+        this.mensaje = mensaje;
         imagen = new GreenfootImage(250,150);
         imagen.setColor(new Color(200,200,0,255));
         imagen.setFont(new Font("verdana",24));
@@ -42,6 +42,7 @@ public class Cadenas extends Actor
     {
         cont --;
         dibuja();
+      
     }
     
     public int obtenerValor()

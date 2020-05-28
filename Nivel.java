@@ -9,6 +9,10 @@ public class Nivel extends World
     Cadenas puntos;
     Cadenas vidas;
     Cadenas power;
+    public static int score = 0; // Variable identificadora score
+    public static int life = 3; // Variable identificadora life
+    public static int powwer = 0; // Variable identificadora power
+    
     /**
      * Constructor for objects of class Nivel.
      * 
@@ -29,11 +33,11 @@ public class Nivel extends World
         //
         //life = new Life();
         //
-        puntos= new Cadenas(0,"Score: ");
+        puntos= new Cadenas(score,"Score: ");
         //
-        vidas= new Cadenas(3,"Life: ");
+        vidas= new Cadenas(life,"Life: ");
         //
-        power=new Cadenas(0,"Power: ");
+        power=new Cadenas(powwer,"Power: ");
         //
         
         addObject(puntos,150,85);

@@ -1,12 +1,4 @@
 #BlueJ class context
 comment0.target=Life
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ lifes\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=void\ act()
-comment2.params=
-comment2.target=Life()
-comment3.params=
-comment3.target=void\ loseLife()
-comment4.params=
-comment4.target=void\ winScore()
-numComments=5
+comment0.text=\r\n/**\r\n\ Write\ a\ description\ of\ class\ lifes\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+numComments=1
