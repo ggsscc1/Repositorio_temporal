@@ -1,22 +1,25 @@
 import greenfoot.*;  
 import java.util.*;
-
+/**
+ * Clase para manejar el disparo.
+ */
 public class Disparo extends Actor
 {
-    private int speed = 5;
-    private int direction;
-    
-    /*
-     * Funcion Constructor De Disparo
+    private int speed = 5;// Variable para la velocidad.
+    private int direction;// Variable para la direccion.
+    /**
+     * Metodo Constructor De Disparo
      */
     public Disparo(int direction)
     {
         this.direction=direction;
     }
-    
-    
+    /**
+     * Metodo para dirigir el disparo.
+     */
     public void act() 
     {
+        // Funcion que cambia la direccion
         switch(direction)
         {
             case 0:
@@ -33,25 +36,15 @@ public class Disparo extends Actor
             break;
         }
         Actor Mono = getOneObjectAtOffset(0,0,Mono.class);
+        // Verifica si existe Mono.
         if(Mono!=null)
         {
             Nivel w = (Nivel)getWorld();
-            //Level1 w = (Level1)getWorld();
-            /*
-            switch(Menu.lvl){
-                 case 1: level1 w = (level1)getWorld(); break;
-                 case 2: level2 w1 = (level2)getWorld(); break;
-                 case 3: MyWorld w2 = (MyWorld)getWorld(); break;
-                }*/
             getWorld().removeObject(Mono);
             w.puntos.incrementar();
             w.score++;
-            //Life r = new Life();
-            //r.winScore();
-         
         }
-        
-
+        // Elimina el objeto del escenario
         if((getX() >= getWorld().getWidth()-3) || (getX()<=3))
         {
             getWorld().removeObject(this);
@@ -62,8 +55,5 @@ public class Disparo extends Actor
                 getWorld().removeObject(this);
             }
         }
-
-        
-
     }    
 }

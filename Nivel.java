@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  
 import java.util.*;
 /**
  * Clase padre de nivel 1, 2 y 3
@@ -6,15 +6,16 @@ import java.util.*;
 public class Nivel extends World
 {
     int x=5;
+    // Variales para colocar puntps y vidas en pantalla
     public Cadenas puntos;
     public Cadenas vidas;
-    public Cadenas power;
+    //public Cadenas power;
     public static int score = 0; // Variable identificadora score
     public static int life = 3; // Variable identificadora life
     public static int powwer = 0; // Variable identificadora power
     
     /**
-     * Constructor for objects of class Nivel.
+     * Constructor para escenarios.
      * 
      */
     public Nivel()
@@ -32,7 +33,7 @@ public class Nivel extends World
       
         puntos= new Cadenas(score,"Score:");
         vidas= new Cadenas(life,"Life:");
-        power=new Cadenas(powwer,"Power:");
+        //power=new Cadenas(powwer,"Power:");
   
         addObject(puntos,150,85);
         addObject(vidas, 270, 85);
@@ -41,6 +42,9 @@ public class Nivel extends World
         crearPower(1);
     }
     
+    /**
+     * Crea los enemigos en pantalla.
+     */
     public void crearMono(int cant)
     {
         for(int i=0;i<cant;i++)
@@ -52,6 +56,9 @@ public class Nivel extends World
         }
     }
     
+    /**
+     *  Variable sin uso para poder.
+     */
     public void crearPower(int numero)
     {
         int i;

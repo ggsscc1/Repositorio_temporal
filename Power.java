@@ -1,22 +1,28 @@
 import greenfoot.*;
 import java.util.*;
-
-
-
+/**
+ * Clase para poder
+ * No utilizada
+ */
 public class Power extends Actor
 {
     private int shot = 1;
     private int shotSpeed = 7;
     private int position;
-    
+    /**
+     * Método contructor.
+    */
     public Power(int direction)
     {
         position=direction;
     }
-    
-    
+    /**
+     * Clase para poder
+     * No utilizada
+     */
     public void act() 
     {
+        // Cambia la posicion respecto al personaje
         switch(position)
         {
             case 0://up
@@ -36,10 +42,8 @@ public class Power extends Actor
                     setRotation(180);
             break;
         }
-        
         List<Mono> Mono=getObjectsInRange(200,Mono.class);
         Iterator it=Mono.iterator();
-        
         if(it.hasNext())
         {
             Mono m=(Mono)it.next();
@@ -49,32 +53,9 @@ public class Power extends Actor
             }
         }
         move(4);
-        
         //Actor Mono = getOneObjectAtOffset(0,0,Mono.class);
         if(Mono!=null)
-        {   
-           // Nivel w = (Nivel)getWorld();
-            /*
-            switch (Menu.lvl)
-            {
-                case 1: Level1 w = (Level1)getWorld(); 
-                        // getWorld().removeObject(Mono);
-                        w.puntos.incrementar();
-                        w.crearMono(1);    
-                        break;
-                case 2: Level2 w1 = (Level2)getWorld(); 
-                        w1.puntos.incrementar();
-                        w1.crearMono(1); 
-                
-                        break;
-                case 3: Level3 w2 = (Level3)getWorld(); 
-                        w2.puntos.incrementar();
-                        w2.crearMono(1); 
-                        break;
-                
-            }
-            
-           */
+        {
             getWorld().removeObject(this);
         }
         else

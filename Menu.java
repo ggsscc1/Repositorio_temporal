@@ -1,15 +1,19 @@
 import greenfoot.*;  
 
-
+/**
+ *  Clase para colocar el menu en pantalla.
+ */
 public class Menu extends World
 {
-    Select s = new Select();
+    Select s = new Select(); // Variable para seleccionar en el menu
+    
+    // Variables para controlar el selector
     private int band = 0;
     private int band2 = 0;
-    public static int lvl = 0;
+ 
     public GreenfootSound musica =  new GreenfootSound("fabrica.wav");
     /**
-     * Constructor for objects of class Menu.
+     * Constructor que inicia el mundo
      * 
      */
     public Menu()
@@ -20,8 +24,7 @@ public class Menu extends World
     }
 
     /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
+     * Prepara el mundo, añade objetos.
      */
     private void prepare()
     {
@@ -32,9 +35,10 @@ public class Menu extends World
 
     }
     
+    /**
+     * Funcion para escojer start o exit 
+     */
     public void act(){
-        //Greenfoot.playSound("fabrica.mp3");
-       
         if(Greenfoot.isKeyDown("UP") && band != 0){
            band ++; 
         }
@@ -55,16 +59,11 @@ public class Menu extends World
             if(band == 0){
                 Greenfoot.setWorld(new Level1());
                 musica.stop();
-                Menu.lvl ++;
             }
             if(band == 1){
                 Greenfoot.stop();
                 musica.stop();
             }
-        }
-        
-        
+        } 
     }
-    
-   
 }
