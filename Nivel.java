@@ -60,4 +60,7 @@ public class Nivel extends World
             addObject(m,x + 350,y); // Posiciona al mono adelante de Dibalito
         }
     }
+    public int getScore() {
+        return this.score;
+    }
 }

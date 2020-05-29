@@ -1,50 +1,33 @@
 import greenfoot.*; 
-import java.util.Formatter;
+//import java.util.Formatter;
 import java.io.*;
 /**
  * Clase para guardar archivo.
  */
 public class saveFile extends Actor
 {   
+    Nivel w = (Nivel)getWorld();
     // Creamos la variable
-    Formatter archivo = null;
-    /**
-     * Act realiza la escritura de archivo
-     */
-    /*
-    public void act() 
-    {
-        Nivel score = new Nivel();
-        try{
-            archivo = new Formatter("C:\\Users\\agust\\Downloads\\probar_profe\\archivo_modificado_por_iuresti\\Repositorio_temporal\\archivoScore\\archivo.txt");
-            archivo.format("%d %s", score.score, "Roberto");
-        }catch(Exception e){
-            System.out.println("Ha ocurrido un error");
-        }finally{
-          archivo.close();   
-        }
-    }*/
-    /*
-    public void act2(){
-        String texto;
-        try{
-            FileReader fr = new FileReader("archivo2.txt");
-            BufferedReader br = new BufferedReader(fr);
-            System.out.println(br.readLine());
-            System.out.println(br.readLine());
-        }catch(Exception err){
-            System.out.println(err.getMessage());
-        }
+    //Formatter archivo = null;
+    
+    private int h = w.score;
+    
+    public void manejaArchivo(){
+        
+           String cadena = Integer.toString(h);
+           
+            try{
+                //Crear un objeto File se encarga de crear o abrir acceso a un archivo.
+                File archivo = new File("C:\\Users\\agust\\Downloads\\probar_profe\\archivo_modificado_por_iuresti\\Repositorio_temporal\\archivoScore\\Rtexto.txt");
+
+                FileWriter escribir = new FileWriter(archivo, true);
+                    escribir.write("User:  ");  
+                    escribir.write(cadena);
+                    escribir.write("\r\n");
+                escribir.close();
+            }catch(Exception e){
+                System.out.println("Error al escribir");
+            }
     }
-    *//*
-    public void act3(){
-        String texto = "Mi texto en el archivo";
-        try{
-            PrintWriter("miarchivo.txt");
-            pw.println(texto);
-            pw.close();
-        }catch(Exception err){
-            
-        }
-    }*/
+    
 }
