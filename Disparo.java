@@ -23,16 +23,16 @@ public class Disparo extends Actor
         switch(direction)
         {
             case 0:
-                setLocation(getX(),getY()-speed);
+                setLocation(getX(),getY()-speed); // Arr
             break;
             case 1:
-                setLocation(getX(),getY()+speed);
+                setLocation(getX() -1,getY()+speed -2); // Ab
             break;
             case 2:
-                setLocation(getX()+speed,getY());
+                setLocation(getX()+speed,getY()); // Der
             break;
             case 3:
-                setLocation(getX()-speed,getY());
+                setLocation(getX()-speed,getY()); // Izq
             break;
         }
         Actor Mono = getOneObjectAtOffset(0,0,Mono.class);
@@ -50,7 +50,7 @@ public class Disparo extends Actor
             getWorld().removeObject(this);
         }else
         {
-            if((getY() >= getWorld().getWidth()-3) || (getY()<=3))
+            if((getY() >= getWorld().getHeight()-3) || (getY()<=3))
             {
                 getWorld().removeObject(this);
             }
