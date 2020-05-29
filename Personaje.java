@@ -14,7 +14,6 @@ public class Personaje extends Actor
     private int shot = 2;
     // Verifican si a disparado
     private boolean isShot=false;
-    private boolean isPower=false;
     /**
      * Funcion constructor.
      */
