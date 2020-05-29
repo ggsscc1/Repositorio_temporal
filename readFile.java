@@ -19,7 +19,7 @@ public class readFile extends Actor
     {
         // Add your action code here.
         List<String> lista = new ArrayList<>();
-
+        //drawCredits s = new drawCredits();
         try (FileReader fr = new FileReader("Rtexto.txt");
              BufferedReader br = new BufferedReader(fr)) {
             String linea = " ";
@@ -37,6 +37,7 @@ public class readFile extends Actor
             Iterator iter = lista.iterator();
             while (iter.hasNext()){
                 System.out.println(iter.next());
+                //s.act("ola");
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -44,5 +45,6 @@ public class readFile extends Actor
                 IOException e) {
             e.printStackTrace();
         }
+        
     } 
 }
