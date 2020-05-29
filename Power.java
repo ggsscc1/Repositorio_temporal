@@ -10,7 +10,7 @@ public class Power extends Actor
     private int shotSpeed = 7;
     private int position;
     /**
-     * Método contructor.
+     * Método constructor.
     */
     public Power(int direction)
     {

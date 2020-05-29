@@ -40,6 +40,16 @@ public class Nivel extends World
         //addObject(power,355,85);
         
         crearPower(1);
+        // Agrega 2 enemigos en Nivel 2
+        if(score >= 5 && score < 10)
+        {
+            crearMono(2);
+        }
+        // Agrega 3 enemigos en Nivel 2
+        if(score >= 10)
+        {
+            crearMono(5);
+        }
     }
     
     /**
@@ -50,9 +60,9 @@ public class Nivel extends World
         for(int i=0;i<cant;i++)
         {
             Mono m= new Mono();
-            int x=Greenfoot.getRandomNumber(getWidth());
+            int x=Greenfoot.getRandomNumber(400);
             int y=Greenfoot.getRandomNumber(getHeight());
-            addObject(m,x,y);
+            addObject(m,x + 350,y); // Posiciona al mono adelante de Dibalito
         }
     }
     

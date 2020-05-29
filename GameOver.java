@@ -10,6 +10,8 @@ public class GameOver extends Actor
     public GameOver()
     {
         setImage("game_over.jpg");
+        Nivel.score = 0;
+        Nivel.life = 3;
         Greenfoot.stop();
     }   
 }

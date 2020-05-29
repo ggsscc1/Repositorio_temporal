@@ -15,7 +15,7 @@ public class Level3 extends Nivel
      * Metodo para colocar win.
      */
     public void act(){
-        if(Nivel.score == 15){
+        if(Nivel.score == 22){
            Win ws = new Win();
            addObject(ws,getWidth()/2,getHeight()/2);
         }

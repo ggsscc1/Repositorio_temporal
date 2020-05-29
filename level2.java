@@ -15,7 +15,7 @@ public class Level2 extends Nivel
      * Metodo para ir al siguiente nivel.
      */
     public void act(){
-        if(Nivel.score == 10){
+        if(Nivel.score == 12){
             Greenfoot.setWorld(new Level3());
         }
     }
